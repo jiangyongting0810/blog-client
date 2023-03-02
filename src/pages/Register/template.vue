@@ -10,7 +10,7 @@
       placeholder="密码"
       @keyup.enter="onRegister"
     />
-    <el-button size="medium" @click="onRegister">立即登录</el-button>
+    <el-button size="medium" @click="onRegister">注册账号</el-button>
     <P class="notice">没有账号</P>
     <router-link to="/register">注册新用户</router-link>
   </div>

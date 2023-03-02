@@ -13,8 +13,7 @@ export default {
     onLogin() {
       this.login({ username: this.username, password: this.password }).then(
         () => {
-          //跳转的方法
-          this.$router.push({ path: "/" });
+          this.$router.push({ path: this.$route.query.redirect || "/" });
         }
       );
     }
