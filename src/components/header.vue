@@ -11,7 +11,7 @@
       </div>
     </template>
     <template v-if="isLogin">
-      <h1>写博客</h1>
+      <h1><router-link to="/">写博客</router-link></h1>
       <router-link to="/create">写</router-link>
       <div class="user">
         <a href="https://sm.ms/image/dOPhTWEpbQe6B4I" target="_blank">
@@ -94,6 +94,9 @@ header.login {
     color: #fff;
     font-size: 40px;
     text-transform: uppercase;
+    a {
+      color: #fff;
+    }
   }
   .avatar {
     width: 40px;

@@ -11,12 +11,13 @@ export default {
     ...mapActions(["register"]),
 
     onRegister() {
-      this.register({ username: this.username, password: this.password }).then(
-        () => {
-          //跳转的方法
-          this.$router.push({ path: "/" });
-        }
-      );
+      this.register({
+        username: this.username,
+        password: this.password
+      }).then(() => {
+        //跳转的方法
+        this.$router.push({ path: "/" });
+      });
     }
   }
 };

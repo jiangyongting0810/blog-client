@@ -26,7 +26,6 @@ export default {
 <style lang="less">
 @import "./assets/common.less";
 #app {
-  background: rgb(245, 245, 245);
   font-family: pingfang sc;
   display: grid;
   grid-template-columns: 12% auto 12%;

@@ -65,6 +65,15 @@ router.beforeEach((to, from, next) => {
         next();
       }
     });
+    // .catch(function(reason) {
+    //   console.log(reason.status);
+    //   if ((reason.msg = "请先登录")) {
+    //     next({
+    //       path: "/login",
+    //       query: { redirect: to.fullPath }
+    //     });
+    //   }
+    // });
   } else {
     next(); // 确保一定要调用 next()
   }
