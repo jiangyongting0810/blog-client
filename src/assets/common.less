@@ -10,17 +10,44 @@ html,
 body,
 #app {
     background: rgb(245, 245, 245);
-
     height: 100%;
     margin: 0;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .el-button {
-    color: @themeColor;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    height: 44px;
+    padding: 10px;
+
+    .el-icon-circle-plus {
+        color: @bgColor;
+        font-size: 18px;
+    }
+
+    span {
+        font-family: 'Source Han Serif CN';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+
+    }
 }
 
 .el-button:hover {
-    color: @bgColor
+    color: #000;
+
+    background-color: #eaeaea;
+    filter: drop-shadow(0px 4px 11px rgba(255, 255, 255, 0.3));
 }
 
 a {
