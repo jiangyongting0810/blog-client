@@ -21,7 +21,7 @@
           {{ blog.description }}
         </p>
         <div class="actions">
-          <router-link :to="`/edit/${blog.id}}`"
+          <router-link :to="`/edit/${blog.id}`"
             ><button>编辑</button></router-link
           >
           <!--@click.prevent 防止闪动 -->
