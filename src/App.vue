@@ -28,7 +28,7 @@ export default {
 #app {
   font-family: pingfang sc;
   display: grid;
-  grid-template-columns: 12% auto 12%;
+  grid-template-columns: 12% 76% 12%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header header"
